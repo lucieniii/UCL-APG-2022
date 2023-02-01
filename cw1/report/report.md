@@ -341,7 +341,7 @@ $$
 $$
 
 
-, then we substitute $\text{(15)},\text{(16)}$ and $\text{17}$ into $(\bold{Rp}_i+\bold{t}-\bold{q}_i)\cdot \bold{n}_i^q$ :
+, then we substitute $\text{(15)},\text{(16)}$ and $\text{(17)}$ into $(\bold{Rp}_i+\bold{t}-\bold{q}_i)\cdot \bold{n}_i^q$ :
 $$
 \begin{aligned}
 
@@ -483,7 +483,7 @@ $$
 
 $\bold{t}$ can be extracted from $\text{x}$ directly by $\text{(16)}$.
 
-After getting $\alpha, \beta$ and $\gamma$ from $\text{x}$, we cannot calculate $\bold{R}$ by $(15)$ which is only an approximation of $\bold{R}$. We should calculate $\bold{R}$ by $(12)$ and $(14)$.
+After getting $\alpha, \beta$ and $\gamma$ from $\text{x}$, we cannot calculate $\bold{R}$ by $(15)$ which is only an approximation of $\bold{R}$. We should calculate $\bold{R}$ by $(12)$ and $(13)$.
 
 
 
