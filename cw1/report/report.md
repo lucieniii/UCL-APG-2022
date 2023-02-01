@@ -149,7 +149,9 @@ x + numpy.random.normal(0, lx*nr)
 
 We can see when the noise rate increase to $1\%$, the fitness becomes less than $50\%$. However, it is because the noises are not taken into account when calculating fitness. Visualize the case of $1\%$ in MeshLab:
 
-<img src="imgs/part3.1.png" alt="part3.1" style="zoom: 20%;" />
+<img src="imgs/part3-1.png" alt="part3.1" style="zoom: 25%;" />
+
+<img src="imgs/part3-2.png" alt="part3.1" style="zoom: 25%;" />
 
 In the screenshot, the rightmost rabbit is the 'noisy rabbit ' before aligning. The coloured rabbit is the 'noisy rabbit ' after aligning. The leftmost is the target rabbit of which the most part is covered by the coloured 'noisy rabbit'.  We can see after aligning by ICP, actually, the pose of the 'noisy rabbit' is aligned with the target rabbit. The reason for low fitness is that there is a threshold when judging whether a point has a corresponding point in the target point cloud, and the addition of noise could make the distance to the potential corresponding point larger than the threshold, thus reducing the fitness. So I add one noise length to the base threshold to observe how the noise will disturb the alignment of the pose of the ICP algorithm.  The relationship between fitness considering noise and the noise rate is shown in the plot below.
 
